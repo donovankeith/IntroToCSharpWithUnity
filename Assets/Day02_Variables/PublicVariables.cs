@@ -27,6 +27,12 @@ public class PublicVariables : MonoBehaviour {
 	string[] myPrivateStringArray = { "Dogs", "Cats", "Birds", "Fish" };
 	GameObject myPrivateGameObject;
 
+    // Serialized Private
+    // These are still private, but can be edited by the user.
+    // Why? http://answers.unity3d.com/questions/213393/private-vs-nonserialized.html
+    [SerializeField]
+    int myVisiblePrivateInteger;
+
 	// Use this for initialization
 	void Start () {
 		// Initialize defaults for User
